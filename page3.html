@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title> Final Exam </title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="grid-container">
+
+	<div class="grid-item header">
+		<h3 style="text-align:center;">CPSC 2125 Exams </h3>
+		</div>
+	<div class="grid-item nav">
+		<ul>
+			<li><a href="index.html"> Home </a> </li>
+      <li><a href="page2.html"> Form </a> </li>
+      <li><a href="page3.html"> Calculator </a> </li>
+      <li><a href="https://www.espn.com/" target="_blank">ESPN </a></li> 
+		</ul>
+		</div>
+
+	<div class="grid-item image"
+     <p style="text-align:center;"> 
+        <img src="/images/eilteveteranbs.png" alt="Nike"> </p>
+    </div>
+
+	<div class="grid-item item4">
+    <form action="https://webdevbasics.net/scripts/yoga.php" method="post">
+    <h4 style="text-align:center;">Tip Calculator </h4>
+
+    <div data-ng-app="" data-ng-init="price=1;tip=5">
+
+
+
+    Price: <input type="number" ng-model="price">
+    <br>
+    <br>
+    <div class ="slidecontainer">
+    Tip <input type="range" min="0" max="50" value="0" step="0" class="slider" id="myRange" ng-model="tip">
+
+    <p><small> Tip = <span id="demo" ng-model="demo"></span> %</small></p>
+  </div>
+
+    <p><b>Total in dollar:</b><id="total"> $ {{price + ((price*tip)/100)}}</p>
+
+    <button  onclick="myFunction()">Calculate Total</button> 
+
+    <input type="reset" value="Reset">
+
+    <p id="click"></p>
+
+    </form>
+    </div>
+		
+
+	    
+      </div>
+
+  <div class="grid-item footer">
+     <p style="text-align:center;"><small> &copy; Gabriel Ortizcontreras |  <a href="mailto:someone@example.com"> ortizcontreras_gabriel@columbusstate.edu </a>   <span id="demo"></span>|<a href="/css/default.asp">CSS Tutorial</a></small></p>
+
+  </div>
+  </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
